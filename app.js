@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initTextCarousel({
     rootSelector: '[data-carousel="soluciones"]',
-    intervalMs: 4500,
+    intervalMs: 8500,
     items: document.documentElement.lang === 'en' ? [
       { name: 'Physical Security', body: 'Intelligent video surveillance, access control and perimeter protection with proactive AI detection to safeguard people and assets.' },
       { name: 'Data Intelligence', body: 'Business Intelligence that turns every event into actionable metrics: foot traffic, dwell-time and loss prevention, in real time.' },

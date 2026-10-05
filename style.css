@@ -45,6 +45,9 @@ img { display: block; max-width: 100%; }
 .link-cta:hover .btn-circle { transform: translateX(4px); }
 .btn-circle--dark { background: #25356d; color: #fff; }
 
+/* Keep SAiMON “i” lowercase inside uppercase UI labels */
+.brand-saimon { text-transform: none; display: inline; }
+
 .pill-outline { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; padding: 9px 18px; border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; }
 .pill-outline:hover { background: #fff; color: #25356d; border-color: #fff; }
 
@@ -1078,6 +1081,20 @@ img { display: block; max-width: 100%; }
 .robotica__overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(37,53,109,0.1) 0%, rgba(30,40,86,0.55) 45%, rgba(21,29,63,0.94) 100%); }
 .robotica__inner { position: relative; z-index: 5; width: 100%; max-width: 1280px; margin: 0 auto; padding: 48px 48px; }
 .robotica__text { max-width: 620px; }
+.robotica__logo,
+.split-panel__logo {
+  display: block;
+  width: auto;
+  height: clamp(48px, 5vw, 64px);
+  max-width: min(280px, 100%);
+  margin: 0 0 28px;
+  object-fit: contain;
+  object-position: left center;
+}
+.split-panel__text-inner--reverse .split-panel__logo {
+  margin-left: auto;
+  object-position: right center;
+}
 .robotica__title { margin: 0 0 20px; font-size: clamp(30px,3.6vw,48px); line-height: 1.08; font-weight: 900; letter-spacing: -0.02em; color: #fff; }
 .robotica__body { margin: 0; font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.78); }
 
@@ -2283,6 +2300,11 @@ a.footer__contact-value:hover { color: #1e86c4; }
     max-width: 100%;
     text-align: center;
   }
+  .robotica__logo {
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center;
+  }
   .robotica__text .eyebrow { justify-content: center; }
   .robotica__title { font-size: clamp(24px, 6vw, 36px); }
   .robotica__body { font-size: 14px; margin-left: auto; margin-right: auto; }
@@ -3400,7 +3422,7 @@ a.footer__contact-value:hover { color: #1e86c4; }
 
 
 /* =========================================================
-   SAIMON VISION (Videoanalítica)
+   SAiMON VISION (Videoanalítica)
    ========================================================= */
 .v-hero { position: relative; min-height: 70.4vh; display: flex; align-items: flex-end; overflow: hidden; background: #25356d; }
 .v-hero__bg { position: absolute; inset: 0; z-index: 0; }
@@ -3775,7 +3797,7 @@ a.footer__contact-value:hover { color: #1e86c4; }
 
 
 /* =========================================================
-   SAIMON ROBOTICS
+   SAiMON ROBOTICS
    ========================================================= */
 .eyebrow-line--light { background: rgba(255,255,255,0.55); }
 .eyebrow-label--light { color: rgba(255,255,255,0.85); }
@@ -4060,7 +4082,7 @@ a.footer__contact-value:hover { color: #1e86c4; }
 
 
 /* =========================================================
-   SAIMON ANALYTICS
+   SAiMON ANALYTICS
    ========================================================= */
 .page-analytics { background: #fff; color: #14161c; }
 .btn-navy--lg { padding: 18px 34px; font-size: 16px; }
